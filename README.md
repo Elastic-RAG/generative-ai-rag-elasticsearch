@@ -79,26 +79,10 @@ docker pull docker.elastic.co/elasticsearch/elasticsearch:8.12.2
 docker pull docker.elastic.co/kibana/kibana:8.12.2
 https://github.com/context-labs/mactop
 
-
+```
 docker network create elastic
 
 docker run -d --name elasticsearch --net elastic -p 9200:9200 -p 9300:9300  -e "discovery.type=single-node" -e "ELASTIC_PASSWORD=root" docker.elastic.co/elasticsearch/elasticsearch:8.12.2
 
 docker run -d --name kibana --net elastic -p 5601:5601 docker.elastic.co/kibana/kibana:8.12.2
-
-http://0.0.0.0:5601/?code=620323
-
-Generate token:
-In docker container terminal
-bin/elasticsearch-create-enrollment-token -s kibana
-
-http://0.0.0.0:5601/app/enterprise_search/content/search_indices/webcx_embedding_index/documents 
-
-
-## ----------
-
-Llama 2, specifically the 7B variant (Llama2-7b), refers to the second generation of the Large Language Model Meta AI (LLaMA) series developed by Meta (formerly Facebook). The "7B" in Llama2-7b indicates that this model has 7 billion parameters. Here is an overview of Llama2-7b and the LLaMA series in general.
-The 7B model is the smallest, designed to balance performance and efficiency.
-Contains 7 billion parameters, which is a measure of the model's complexity and capability. Parameters are essentially the weights in the neural network that are learned during training.
-
-The big advantage of Azure OpenAI is Azure's strong focus on enterprise customers and the requirements of production environments
+```
