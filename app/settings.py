@@ -1,0 +1,21 @@
+API_KEY = 'your_api_key_here'
+MODEL_NAME = 'gpt-4'
+DATA_BASE_DIR = "data"
+DATA_ALLOWED_EXTENSIONS = ".txt"
+CHUNK_SIZE = 1000
+CHUNK_OVERLAP = 150
+EMBEDDING_MODEL_PATH = "sentence-transformers/all-MiniLM-l6-v2"
+EMBEDDING_MODEL_DEVICE = "cpu"
+TOKENIZATION_MODEL_PATH = "meta-llama/Llama-2-7b-hf"
+TOKENIZATION_MAX_LENGTH = 512
+LLM_PATH = "app/models/llama-2-7b.Q4_K_M.gguf"
+LLM_TEMPERATURE = 0.75
+LLM_MAX_TOKENS = 4000
+LLM_TOP_P = 1
+LLM_VERBOSE = True
+HF_TOKEN = "<your_hugging_face_token_here>"
+INDEX = 'test_index'
+ES_URL = "https://localhost:9200"
+PASSWORD = "root"
+USERNAME = "elastic"
+

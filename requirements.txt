@@ -1,0 +1,16 @@
+datasets
+sentence-transformers
+transformers
+langchain
+langchain_experimental
+huggingface-hub
+numpy
+html2text
+requests
+llama-cpp-python
+langchain-community
+gradio
+openai
+chromadb
+azure-identity
+langchain_elasticsearch
